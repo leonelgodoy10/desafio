@@ -1,0 +1,52 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-FKJHR7U",
+    "children" : [ {
+      "name" : "10896@DESKTOP-FKJHR7U.Test worker(13)",
+      "children" : [ {
+        "name" : "TestNoFoundBrowserException()",
+        "uid" : "556154f56db9a25a",
+        "parentUid" : "9f86751fc071ec3a268126a606d34e48",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666648378931,
+          "stop" : 1666648378968,
+          "duration" : 37
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestFirefox()",
+        "uid" : "920d76ca6b8dff77",
+        "parentUid" : "9f86751fc071ec3a268126a606d34e48",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666648384835,
+          "stop" : 1666648388831,
+          "duration" : 3996
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestEdge()",
+        "uid" : "dd94ea5cb98a9eb8",
+        "parentUid" : "9f86751fc071ec3a268126a606d34e48",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666648379215,
+          "stop" : 1666648384827,
+          "duration" : 5612
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9f86751fc071ec3a268126a606d34e48"
+    } ],
+    "uid" : "268d932245b4b7e4dcf5bc749b2b10e9"
+  } ]
+}

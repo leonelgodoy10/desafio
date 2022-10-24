@@ -1,0 +1,31 @@
+[ {
+  "uid" : "dd94ea5cb98a9eb8",
+  "name" : "TestEdge()",
+  "time" : {
+    "start" : 1666648379215,
+    "stop" : 1666648384827,
+    "duration" : 5612
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "920d76ca6b8dff77",
+  "name" : "TestFirefox()",
+  "time" : {
+    "start" : 1666648384835,
+    "stop" : 1666648388831,
+    "duration" : 3996
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "556154f56db9a25a",
+  "name" : "TestNoFoundBrowserException()",
+  "time" : {
+    "start" : 1666648378931,
+    "stop" : 1666648378968,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
