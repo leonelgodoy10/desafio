@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Oct 24 18:52:58 CLST 2022","Mon Oct 24 18:52:58 CLST 2022","37","","framework.testing.testcases.OpenAllWebBrowser","","framework.testing.testcases.OpenAllWebBrowser","TestNoFoundBrowserException","TestNoFoundBrowserException()",""
+"passed","Mon Oct 24 18:52:59 CLST 2022","Mon Oct 24 18:53:04 CLST 2022","5612","","framework.testing.testcases.OpenAllWebBrowser","","framework.testing.testcases.OpenAllWebBrowser","TestEdge","TestEdge()",""
+"passed","Mon Oct 24 18:53:04 CLST 2022","Mon Oct 24 18:53:08 CLST 2022","3996","","framework.testing.testcases.OpenAllWebBrowser","","framework.testing.testcases.OpenAllWebBrowser","TestFirefox","TestFirefox()",""

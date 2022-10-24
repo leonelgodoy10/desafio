@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="framework.testing.testcases.OpenAllWebBrowser" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-10-24T21:52:58" hostname="DESKTOP-FKJHR7U" time="9.901">
+  <properties/>
+  <testcase name="TestNoFoundBrowserException()" classname="framework.testing.testcases.OpenAllWebBrowser" time="0.28"/>
+  <testcase name="TestEdge()" classname="framework.testing.testcases.OpenAllWebBrowser" time="5.616"/>
+  <testcase name="TestFirefox()" classname="framework.testing.testcases.OpenAllWebBrowser" time="3.997"/>
+  <system-out><![CDATA[browser value is: none
+browser value is: edge
+browser value is: firefox
+]]></system-out>
+  <system-err><![CDATA[Starting Microsoft Edge WebDriver 106.0.1370.52 (dc5b94d8835a38fa5cf712169b3298f4ecd40112) on port 64979
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+oct. 24, 2022 6:53:03 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+oct. 24, 2022 6:53:04 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 106, so returning the closest version found: a no-op implementation
+oct. 24, 2022 6:53:04 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Unable to find CDP implementation matching 106.
+oct. 24, 2022 6:53:04 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+1666648385008	geckodriver	INFO	Listening on 127.0.0.1:64580
+1666648385159	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50168" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\JORDAN~1\\AppData\\Local\\Temp\\rust_mozprofilej8gyjI"
+1666648385554	Marionette	INFO	Marionette enabled
+1666648385559	Marionette	INFO	Listening on port 62149
+WebDriver BiDi listening on ws://127.0.0.1:50168
+Read port: 62149
+1666648385832	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JORDAN~1\\AppData\\Local\\Temp\\rust_mozprofilej8gyjI\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50168/devtools/browser/7b48bf80-5f9a-4c84-b1ec-3c82b39dfe8a
+oct. 24, 2022 6:53:07 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+1666648387768	Marionette	INFO	Stopped listening on port 62149
+]]></system-err>
+</testsuite>
