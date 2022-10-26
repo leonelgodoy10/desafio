@@ -25,7 +25,7 @@ public class DriverFactory {
                 hiloLocal.set(new FirefoxDriver());
                 getDriver().manage().deleteAllCookies();
                 getDriver().manage().window().maximize();
-                getDriver().manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
+                getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
                 return getDriver();
             case "edge":
                 WebDriverManager.edgedriver().setup();
