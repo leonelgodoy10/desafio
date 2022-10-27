@@ -26,4 +26,5 @@ public class CruceroTest extends SeleniumTestBase {
         rumboHomePageCrucero.verTodasLasOfertas();
         Assertions.assertEquals("Cruceros",rumboHomePageCrucero.textoUrlTitulo());
     }
+
 }

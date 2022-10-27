@@ -22,4 +22,5 @@ public class VueloTest extends SeleniumTestBase {
         Assertions.assertEquals("Vuelos baratos | Buscador de vuelos | Rumbo",rumboHomePageHomeVuelo.textoUrlTitulo());
 
     }
+
 }
