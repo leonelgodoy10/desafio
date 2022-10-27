@@ -1,9 +1,6 @@
 package framework.engine.selenium;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 
 import java.util.List;
 
@@ -66,6 +63,9 @@ public class SeleniumWrapper {
 
     public void navigateTo(String url){
         driver.navigate().to(url);
+    }
+    public void scroll (int vertical, int horizontal){
+        ((JavascriptExecutor)driver).executeScript("scroll("+vertical+","+horizontal+")");
     }
 
     public String getUrlTitle(){

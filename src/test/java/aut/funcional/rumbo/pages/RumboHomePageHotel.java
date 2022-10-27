@@ -20,21 +20,22 @@ public class RumboHomePageHotel extends SeleniumWrapper {
 
 
     //methods
-    public void pagoFraccionado(){
 
+    public void aceptarCookie(){
         click(BtnaceptarCookiesLocator);
-        click(btnHotelLocator);
-        click(BtnaceptarCookiesLocator);
-        click(pagoFraccionadoLocator);
-        click(btnEchaleUnVistazoLocator);
-        click(btnHotelLocator);
-
-
-
-
     }
-
-
+    public void selectorHotel(){
+        click(btnHotelLocator);
+    }
+    public void selecionarFraccionado(){
+        click(pagoFraccionadoLocator);
+    }
+    public void echaleUnVistazo(){
+        click(btnEchaleUnVistazoLocator);
+    }
+    public String textoUrlTitulo(){
+        return getUrlTitle();
+    }
     public void navegarAlHome(){
         navigateTo(BASE_URL_AUT);
     }

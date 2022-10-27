@@ -11,10 +11,15 @@ public class VueloTest extends SeleniumTestBase {
     RumboHomePageVuelo rumboHomePageHomeVuelo;
 
     @Test
-    void busquedaVueloVacio(){
+    void buscaVueloVacio(){
         rumboHomePageHomeVuelo = new RumboHomePageVuelo(DriverFactory.getDriver());
         rumboHomePageHomeVuelo.navegarAlHome();
-        rumboHomePageHomeVuelo.vueloVacior();
+        rumboHomePageHomeVuelo.aceptarCookie();
+        rumboHomePageHomeVuelo.selectorVuelos();
+        rumboHomePageHomeVuelo.aceptarCookie();
+        rumboHomePageHomeVuelo.buscarVuelo();
+        Assertions.assertEquals("Introduce ciudad o aeropuerto de destino",rumboHomePageHomeVuelo.mensajesDeErrores());
+        Assertions.assertEquals("Vuelos baratos | Buscador de vuelos | Rumbo",rumboHomePageHomeVuelo.textoUrlTitulo());
 
     }
 }

@@ -12,10 +12,17 @@ public class HotelTest extends SeleniumTestBase {
     RumboHomePageHotel rumboHomePageHotel;
 
     @Test
-    void pagoFraccionado(){
+    void funcionalidadPagoFraccionado(){
         rumboHomePageHotel = new RumboHomePageHotel(DriverFactory.getDriver());
         rumboHomePageHotel.navegarAlHome();
-        rumboHomePageHotel.pagoFraccionado();
-        Assertions.assertEquals("Hoteles | Ofertas de Hoteles baratos | Rumbo",rumboHomePageHotel.getUrlTitle());
+        rumboHomePageHotel.aceptarCookie();
+        rumboHomePageHotel.selectorHotel();
+        rumboHomePageHotel.aceptarCookie();
+        rumboHomePageHotel.selecionarFraccionado();
+        rumboHomePageHotel.echaleUnVistazo();
+        Assertions.assertEquals("Pago fraccionado | Rumbo",rumboHomePageHotel.textoUrlTitulo());
+        rumboHomePageHotel.selectorHotel();
+        Assertions.assertEquals("Hoteles | Ofertas de Hoteles baratos | Rumbo",rumboHomePageHotel.textoUrlTitulo());
+
     }
 }

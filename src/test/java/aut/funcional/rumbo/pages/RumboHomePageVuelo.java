@@ -17,17 +17,23 @@ public class RumboHomePageVuelo extends SeleniumWrapper {
     By BtnaceptarCookiesLocator = By.xpath("//button[@class='iubenda-cs-accept-btn iubenda-cs-btn-primary']");
     By vueloslocator = By.xpath("//div[@class='display-1dpcy4y-HubNavigationMenu-styled e10w470p3']//a[@title='Vuelos'][normalize-space()='Vuelos']");
     By btnBuscarVueloLocator = By.xpath("//button[normalize-space()='Buscar']");
-    By mensajeErrorVueloLocator = By.xpath("//span[@class='display-1jbu58d-ValidationMessage-styled-ValidationMessage-styled-ValidationMessage-styled']");
+    By mensajeErrorVueloVacioLocator = By.xpath("//span[@class='display-1jbu58d-ValidationMessage-styled-ValidationMessage-styled-ValidationMessage-styled']");
 
     //methods
-    public void vueloVacior(){
-
+    public void aceptarCookie(){
         click(BtnaceptarCookiesLocator);
+    }
+    public void selectorVuelos(){
         click(vueloslocator);
-        click(BtnaceptarCookiesLocator);
+    }
+    public void buscarVuelo(){
         click(btnBuscarVueloLocator);
-        Assertions.assertEquals("Introduce ciudad o aeropuerto de destino",getText(mensajeErrorVueloLocator));
-        Assertions.assertEquals("Vuelos baratos | Buscador de vuelos | Rumbo",getUrlTitle());
+    }
+    public String mensajesDeErrores(){
+        return getText(mensajeErrorVueloVacioLocator);
+    }
+    public String textoUrlTitulo(){
+        return getUrlTitle();
     }
     public void navegarAlHome(){
         navigateTo(BASE_URL_AUT);
