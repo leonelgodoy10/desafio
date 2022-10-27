@@ -27,9 +27,8 @@ public class RumboHomePageVuelo extends SeleniumWrapper {
         click(BtnaceptarCookiesLocator);
         click(btnBuscarVueloLocator);
         Assertions.assertEquals("Introduce ciudad o aeropuerto de destino",getText(mensajeErrorVueloLocator));
+        Assertions.assertEquals("Vuelos baratos | Buscador de vuelos | Rumbo",getUrlTitle());
     }
-
-
     public void navegarAlHome(){
         navigateTo(BASE_URL_AUT);
     }
